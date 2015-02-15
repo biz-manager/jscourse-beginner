@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title id="">Тестване на Switch</title>
+<script type="text/javascript">
+   
+
+    var test_array = new Array();
+    var a ;
+    function TypeOf(a)
+    {
+       
+       return typeof a;
+           
+    }      
+        
+    
+    var element = prompt('Въведете плод: ');
+    test_array.push(element);
+    
+    var check = TypeOf(test_array);
+    switch(true)
+       {
+       
+        case TypeOf(test_array) == Object :
+               alert('You have an Object!');
+               break;       
+        case TypeOf(test_array) == Array :
+               alert('You have an Array!');
+               break;
+         case test_array instanceof Array && test_array instanceof Object :
+               alert('You have an Array and an Object!');
+               break;       
+        
+        default:
+               alert(check + ' isnt undefined');
+       }     
+     
+     
+           
+         
+        
+</script>
+</head>
+<body>
+
+
+
+</body>
+</html>
