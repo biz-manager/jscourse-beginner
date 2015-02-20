@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title id="">Тестване на Switch</title>
+<script type="text/javascript">
+   
+  
+    var storage =  {
+        
+        set: function(name, value)
+        { 
+              this.name = name;
+              this.value = value;
+              localStorage.setItem(this.name, this.value);
+        }, 
+        get: function ( name )
+        {
+            this.name = name;
+            var getRes = localStorage.getItem( this.name );
+            return getRes;
+         },
+        
+        c:{Name:"Oleg", Gender:"Male"},
+        
+        setMultiple: function (c.Name, c.Gender)
+        {           
+               
+               
+                localStorage.setItem(c.Name);
+                localStorage.setItem(c.Gender);
+        
+        },
+       
+        getMultiple: function (c.Name, c.Gender)
+        {
+             
+            
+            
+            var b[0] = localStorage.getItem(c.Name);
+            b[1] = localStorage.getItem(c.Gender);
+            return b;
+        },
+    
+       
+       
+      
+    };    
+        
+    
+     storage.set('Name', 'Emil');
+     var getStorage = storage.get('Name');
+     alert('Name: ' + getStorage);
+     var setStorageMultiple = storage.setMultiple(c.Name, c.Gender);
+    if(storage.getMultiple(['Oleg','Male'].toString() == 'Oleg,Male'
+                           {
+     var getStorageMultiple = storage.getMultiple(setStorageMultiple);
+       }
+      
+     alert('Name, Gender: ' + getStorageMultiple);
+         
+    
+     
+        
+     
+   
+    
+</script>
+</head>
+<body>
+
+
+
+</body>
+</html>
